@@ -1,4 +1,4 @@
-package br.ufpb.disciplina.estrutura.dados.atividades.atv1;
+package br.ufpb.estrutura.dados.atv1;
 
 /******************************************************************************
  *  Compilation:  javac StdOut.java

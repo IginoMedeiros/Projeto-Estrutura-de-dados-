@@ -1,7 +1,6 @@
-package br.ufpb.disciplina.estrutura.dados.atividades.atv1;
+package br.ufpb.estrutura.dados.atv1;
 
 import java.util.Iterator;
-import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
 public class Stack1 <Item> implements Iterable <Item> {
