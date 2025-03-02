@@ -1,5 +1,3 @@
-package br.ufpb.estrutura.dados.atv1;
-
 /******************************************************************************
  *  Compilation:  javac StdIn.java
  *  Execution:    java StdIn   (interactive test of basic functionality)
@@ -491,6 +489,7 @@ public final class StdIn {
      * @throws InputMismatchException if any token cannot be parsed as an <tt>int</tt>
      * @deprecated Replaced by {@link #readAllInts()}.
      */
+    @Deprecated//declaração de método obsoleto
     public static int[] readInts() {
         return readAllInts();
     }
@@ -502,6 +501,7 @@ public final class StdIn {
      * @throws InputMismatchException if any token cannot be parsed as a <tt>double</tt>
      * @deprecated Replaced by {@link #readAllDoubles()}.
      */
+    @Deprecated
     public static double[] readDoubles() {
         return readAllDoubles();
     }
@@ -511,6 +511,7 @@ public final class StdIn {
      * @return all remaining tokens, as an array of strings
      * @deprecated Replaced by {@link #readAllStrings()}.
      */
+    @Deprecated
     public static String[] readStrings() {
         return readAllStrings();
     }

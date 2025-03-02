@@ -1,5 +1,3 @@
-package br.ufpb.estrutura.dados.atv1;
-
 import java.util.Stack;
 
 public class Evaluate {
@@ -8,7 +6,9 @@ public class Evaluate {
         Stack<Double> vals = new Stack<Double>();
 
         while (!StdIn.isEmpty()) {
+
             String s = StdIn.readString();
+
             if (s.equals("(")) ;
             else if (s.equals("+")) ops.push(s);
             else if (s.equals("-")) ops.push(s);
@@ -28,6 +28,7 @@ public class Evaluate {
             else vals.push(Double.parseDouble(s));
 
         }
+
         StdOut.println(vals.pop());
 
     }
