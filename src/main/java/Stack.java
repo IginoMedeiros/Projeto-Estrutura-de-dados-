@@ -1,9 +1,7 @@
-package br.ufpb.estrutura.dados.atv1;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class Stack1 <Item> implements Iterable <Item> {
+public class Stack<Item> implements Iterable <Item> {
     private Node<Item> first;
     private int n;
 
@@ -13,14 +11,13 @@ public class Stack1 <Item> implements Iterable <Item> {
         //Esse endereço pode ser nulo
     }
 
-    public Stack1() {
+    public Stack() {
         first = null;
         n = 0;
     }
 
     public boolean isEmpty() {
-        first = null;
-        return true; // se for vazio ele retorna verdadeiro
+        return first == null;
     }
 
     public int size() {
@@ -90,7 +87,7 @@ public class Stack1 <Item> implements Iterable <Item> {
     }
 
     public static void main (String[]args){
-        Stack1 <String> stack = new Stack1<String>();
+        Stack<String> stack = new Stack<String>();
         while(!StdIn.isEmpty()){
             String item = StdIn.readString();
             if(!item.equals("-"))

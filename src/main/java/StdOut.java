@@ -1,5 +1,3 @@
-package br.ufpb.estrutura.dados.atv1;
-
 /******************************************************************************
  *  Compilation:  javac StdOut.java
  *  Execution:    java StdOut
